@@ -40,6 +40,19 @@ h3 {
     font-size: 22px;
 }
 
+/* Rolagem suave da página */
+
+/* A rolagem é ativada somente se quantidade de movimento não-essencial do navegador estiver ativada (padrão) */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    :target {
+        scroll-margin-top: 1em;
+    }
+}
+
 /* Nav */
 
 nav {
