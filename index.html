@@ -128,16 +128,18 @@
 
         <section class="contato">
             <img src="img/telefone.svg" alt="">
-            <form>
+            <div class="formulario">
                 <h2>Contato</h2>
                 <p>Quer entrar em contato comigo?<br>Preencha o formulário e entrarei em contato o mais rápido possível.</p>
-
-                <label for="fnome">Nome<input type="text" id="fnome"></label>
-                <label for="femail">Email<input type="email" id="femail"></label>
-                <input type="text" id="fassunto" placeholder="Assunto">
-                <textarea id="fmensagem" placeholder="Mensagem"></textarea>
-                <input type="submit" value="Enviar mensagem">
-            </form>
+                <form>
+                    <label for="fnome">Nome<input type="text" id="fnome"></label>
+                    <label for="femail">Email<input type="email" id="femail"></label>
+                    <!-- <input type="text" id="fassunto" placeholder="Assunto"> -->
+                    <label for="fnome">Assunto<input type="text" id="fassunto"></label>
+                    <textarea id="fmensagem" placeholder="Mensagem"></textarea>
+                    <input type="submit" value="Enviar mensagem">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
