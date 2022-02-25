@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/54d4c097f2.js" crossorigin="anonymous"></script>
     <title>João Raphael - Portfólio</title>
 </head>
 <body>
@@ -17,18 +18,20 @@
             <li><a href="">Hobbies</a></li>
             <li><a href="">Formação</a></li>
             <li><a href="">Projetos</a></li>
-            <li><a href="mailto:raphaeljoao02@gmail.com" target="_blank">raphaeljoao02@gmail.com</a></li>
+            <li><a class="email" href="mailto:raphaeljoao02@gmail.com" target="_blank">raphaeljoao02@gmail.com</a></li>
         </ul>
     </nav>
     <header>
-        <h2>Olá, meu nome é João Raphael e construo páginas Web</h2>
-        <p>Estudante de Ciência da Computação na UFRGS e atualmente estou participando do projeto Oracle ONE na Alura.</p>
-        <ul class="social">
-            <li><a href="" target="_blank">GitHub</a></li>
-            <li><a href="" target="_blank">LinkedIn</a></li>
-            <li><a href="" target="_blank">Instagram</a></li>
-            <li><a href="" target="_blank">Currículo</a></li>
-        </ul>
+        <div class="apresentacao">
+            <h2>Olá, meu nome é João Raphael e construo páginas web</h2>
+            <p>Estudante de Ciência da Computação na UFRGS e atualmente estou participando do projeto Oracle Next Education na Alura.</p>
+            <ul class="social">
+                <li><a href="" target="_blank">GitHub</a></li>
+                <li><a href="" target="_blank">LinkedIn</a></li>
+                <li><a href="" target="_blank">Instagram</a></li>
+                <li><a href="" target="_blank">Currículo</a></li>
+            </ul>
+        </div>
         <img class="foto-perfil" src="img/perfil-quadrado.jpg">
     </header>
     <main>
@@ -36,54 +39,90 @@
             <h2>Sobre mim</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, placeat! Error, consequuntur minima. At in beatae corporis animi cumque dolore rerum incidunt, sed quae error. Laboriosam voluptate, sunt sit eaque at quos molestias dolores sequi atque assumenda suscipit voluptas fugiat, minima corporis earum soluta reiciendis debitis sint similique excepturi velit.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita accusamus assumenda at temporibus saepe tenetur dignissimos aspernatur, consequatur alias laboriosam modi aliquam corrupti eius. Quae aliquam rem eos doloribus quasi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quos officia vel ex in error rem enim, nemo exercitationem commodi quibusdam mollitia earum ducimus omnis!</p>
 
             <img class="assinatura" src="img/assinatura-beautiful-kisses.png" alt="">
         </section>
 
         <section class="skills">
             <h2>Skills</h2>
-            <div class="skill html5">HTML5</div>
-            <div class="skill css">CSS</div>
-            <div class="skill js">JS</div>
+            <div class="container">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JS</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+            </div>
         </section>
 
         <section class="hobbies">
             <h2>Hobbies</h2>
-            <div class="hobby musica">Ouvir música</div>
-            <div class="hobby serie">Assistir séries</div>
-            <div class="hobby fotografia">Tirar fotos</div>
+            <div class="container">
+                <div class="hobby">
+                    <i class="fa-solid fa-music"></i>
+                    <p>Ouvir música</p>
+                </div>
+                <div class="hobby">
+                    <i class="fa-solid fa-tv"></i>
+                    <p>Assistir séries</p>
+                </div>
+                <div class="hobby">
+                    <i class="fa-solid fa-camera"></i>
+                    <p>Tirar fotos</p>
+                </div>
+                <div class="hobby">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <p>Ler</p>
+                </div>
+            </div>
         </section>
 
         <section class="formacao-academica">
             <h2>Formação Acadêmica</h2>
-            <div class="formacao">
-                <img src="img/ufrgs-logo.png" alt="">
-                <h3>Ciência da Computação</h3>
-                <p>Em andamento - UFRGS</p>
-            </div>
-            <div class="formacao">
-                <img src="img/alura-logo.svg" alt="">
-                <h3>Formação Oracle Next Education</h3>
-                <p>Em andamento - Alura</p>
+            <div class="container">
+                <div class="formacao">
+                    <div class="img"><img src="img/ufrgs-logo.png" alt=""></div>
+                    <h3>Ciência da Computação</h3>
+                    <p>Em andamento - UFRGS</p>
+                </div>
+                <div class="formacao">
+                    <div class="img"><img src="img/alura-logo.svg" alt=""></div>
+                    <h3>Formação Oracle Next Education</h3>
+                    <p>Em andamento - Alura</p>
+                </div>
             </div>
         </section>
 
         <section class="experiencia">
             <h2>Experiência Profissional</h2>
             <div class="projeto">
-                <img src="img/projetos/challenge-codificador.png" alt="">
-                <h3>Decodificador de Texto</h3>
-                <p>Challenge Alura Codificador</p>
-                <a class="repositorio" href="https://github.com/raphaeljjoao/challenge-codificador" target="_blank">Repositório</a>
-                <a class="demo" href="https://raphaeljjoao.github.io/challenge-codificador/" target="_blank">Ver demo</a>
+                <div class="img"><img src="img/projetos/challenge-codificador.png" alt=""></div>
+                <div>
+                    <h3>Decodificador de Texto</h3>
+                    <p>Challenge Alura Codificador</p>
+                    <a class="repositorio" href="https://github.com/raphaeljjoao/challenge-codificador" target="_blank">Repositório</a>
+                    <a class="demo" href="https://raphaeljjoao.github.io/challenge-codificador/" target="_blank">Ver demo</a>
+                </div>
             </div>
             <div class="projeto">
-                <img src="img/projetos/challenge-forca.png" alt="">
-                <h3>Jogo da Forca</h3>
-                <p>Challenge Alura Forca</p>
-                <a class="repositorio" href="https://github.com/raphaeljjoao/challenge-forca" target="_blank">Repositório</a>
-                <a class="demo" href="https://raphaeljjoao.github.io/challenge-forca/" target="_blank">Ver demo</a>
+                <div class="img"><img src="img/projetos/challenge-forca.png" alt=""></div>
+                <div class="info">
+                    <h3>Jogo da Forca</h3>
+                    <p>Challenge Alura Forca</p>
+                    <a class="repositorio" href="https://github.com/raphaeljjoao/challenge-forca" target="_blank">Repositório</a>
+                    <a class="demo" href="https://raphaeljjoao.github.io/challenge-forca/" target="_blank">Ver demo</a>
+                </div>
             </div>
         </section>
 
