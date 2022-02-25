@@ -36,6 +36,10 @@ ul li {
     justify-content: space-around;
 }
 
+h3 {
+    font-size: 22px;
+}
+
 /* Nav */
 
 nav {
@@ -167,10 +171,6 @@ main h2 {
     /* border: 1px solid #2A7AE4;  */
 }
 
-.formacao h3 {
-    font-size: 22px;
-}
-
 .formacao .img {
     width: 368px;
     height: 286px;
@@ -190,6 +190,7 @@ main h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
+    line-height: 30px;
 }
 
 .projeto:nth-child(odd) {
@@ -197,10 +198,11 @@ main h2 {
 }
 
 .projeto .img {
-    width: 70%;
+    width: 60%;
     padding: 30px;
-    background-color: white;
+    /* background-color: white; */
     margin-right: 35px;
+    /* border: 1px solid #464646; */
     border: 1px solid #2A7AE4;
 }
 
