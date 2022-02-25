@@ -107,10 +107,6 @@ header li::after {
 
 /* Main */
 
-main {
-    margin: 70px 0;
-}
-
 main section {
     padding: 85px
 }
@@ -235,3 +231,13 @@ main h2 {
 /* Main - Contato */
 
 /* Footer */
+
+footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 18px;
+}
+
+footer a {
+    font-weight: bold;
+}
