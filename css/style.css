@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #464646;
+    font-size: 16px;
+}
+
+.sobre, .formacao-academica, .contato {
+    background-color: #D4E4FA;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+nav h1::before {
+    content: url(../img/icones/auto_awesome_black_24dp\ 1.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+nav h1 {
+    font-size: 16px;
+}
+
+a.email {
+    font-weight: bold;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    padding: 0px 50px;
+    margin: 50px 0 70px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao {
+    width: 60%;
+}
+
+.foto-perfil {
+    width: 25%;
+    border-radius: 50%;
+    /* border: 3px solid #464646; */
+}
+
+header h2 {
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+header p {
+    font-size: 22px;
+}
+
+header h2, header p {
+    margin-bottom: 20px;
+}
+
+header ul {
+    margin-left: -15px;
+}
+
+header li::after {
+    content: url(../img/icones/seta.png);
+    margin-left: 5px;
+}
+
+/* Main */
+
+main {
+    margin: 70px 0;
+}
+
+main section {
+    padding: 85px
+}
+
+main h2 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.skills h2, .hobbies h2, .formacao-academica h2, .experiencia h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Main - Sobre */
+
+.sobre p {
+    margin: 20px 0;
+}
+
+.assinatura {
+    width: 30%;
+}
+
+/* Main - Skills e Hobbies */
+
+.skill, .hobby {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    padding: 105px 16px 16px 16px;
+    background-color: white;
+    margin: 0 20px;
+    /* border: 1px solid #2A7AE4;  */
+}
+
+.skill i, .hobby i {
+    font-size: 32px;
+    color: #2A7AE4;
+    margin-bottom: 5px;
+}
+
+.skill p, .hobby p {
+    font-weight: bold;
+}
+
+/* Main - Formação */
+
+.formacao-academica {
+    padding-bottom: 130px;
+}
+
+.formacao {
+    display: inline-block;
+    width: 368px;
+    height: 286px;
+    margin: 20px;
+    /* border: 1px solid #2A7AE4;  */
+}
+
+.formacao h3 {
+    font-size: 22px;
+}
+
+.formacao .img {
+    width: 368px;
+    height: 286px;
+    padding: 60px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.formacao img {
+    width: 100%;
+}
+
+/* Main - Experiência */
+
+.projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.projeto:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.projeto .img {
+    width: 70%;
+    padding: 30px;
+    background-color: white;
+    margin-right: 35px;
+    border: 1px solid #2A7AE4;
+}
+
+.projeto img {
+    width: 100%;
+}
+
+.projeto .info {
+    width: 30%;
+}
+
+.projeto p {
+    margin-bottom: 20px;
+}
+
+.repositorio, .demo {
+    padding: 12px 20px;
+}
+
+.repositorio {
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+}
+
+.demo {
+    color: white;
+    background-color: #2A7AE4;
+}
+
+/* Main - Contato */
+
+/* Footer */
