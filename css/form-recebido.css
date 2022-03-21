@@ -1,0 +1,13 @@
+.form-recebido {
+    position: relative;
+    /* top: 50%; */
+    transform: translateY(35vh);
+    margin: 0 auto;
+    width: 40%;
+    font-size: 1.35em;
+}
+
+.form-recebido h1 {
+    color: #2A7AE4;
+    margin-bottom: .6em;
+}
