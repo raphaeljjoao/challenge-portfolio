@@ -131,12 +131,12 @@
             <div class="formulario">
                 <h2>Contato</h2>
                 <p>Quer entrar em contato comigo?<br>Preencha o formulário e entrarei em contato o mais rápido possível.</p>
-                <form>
-                    <label for="fnome">Nome<input type="text" id="fnome"></label>
-                    <label for="femail">Email<input type="email" id="femail"></label>
+                <form action="form-enviado.html" target="_blank">
+                    <label for="fnome">Nome<input type="text" id="fnome" maxlength="50" required></label>
+                    <label for="femail">Email<input type="email" id="femail" required></label>
                     <!-- <input type="text" id="fassunto" placeholder="Assunto"> -->
-                    <label for="fnome">Assunto<input type="text" id="fassunto"></label>
-                    <textarea id="fmensagem" placeholder="Mensagem"></textarea>
+                    <label for="fnome">Assunto<input type="text" id="fassunto" maxlength="50" required></label>
+                    <textarea id="fmensagem" placeholder="Mensagem" maxlength="300" required></textarea>
                     <input type="submit" value="Enviar mensagem">
                 </form>
             </div>
