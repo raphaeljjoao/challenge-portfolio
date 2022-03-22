@@ -300,6 +300,7 @@ input:focus, textarea:focus {
 input[type='submit'] {
     color: white;
     background-color: #2A7AE4;
+    cursor: pointer;
 }
 
 /* Main - Contato - Erros */
@@ -311,10 +312,11 @@ input[type='submit'] {
 
 .validacao li {
     display: block;
+    margin-right: -50px;
 }
 
-.validacao ul li::before {
-    content: '- ';
+input[type='submit'].desativado {
+    cursor: not-allowed;
 }
 
 /* Footer */
