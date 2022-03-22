@@ -137,7 +137,10 @@
                     <!-- <input type="text" id="fassunto" placeholder="Assunto"> -->
                     <label for="fnome">Assunto<input type="text" id="fassunto" maxlength="50" required></label>
                     <textarea id="fmensagem" placeholder="Mensagem" maxlength="300" required></textarea>
-                    <input type="submit" value="Enviar mensagem">
+                    <div class="validacao">
+                        <ul id="erros"></ul>
+                    </div>
+                    <input type="submit" id="enviar" value="Enviar mensagem">
                 </form>
             </div>
         </section>
@@ -146,5 +149,6 @@
         <p>Desenvolvido por <a href="https://www.inf.ufrgs.br/~jrfdorneles/" target="_blank">João Raphael</a></p>
         <p>&copy; 2022</p>
     </footer>
+    <script src="js/validacao.js"></script>
 </body>
 </html>

@@ -302,6 +302,21 @@ input[type='submit'] {
     background-color: #2A7AE4;
 }
 
+/* Main - Contato - Erros */
+
+.validacao {
+    color: #E35040;
+    margin-bottom: 20px;
+}
+
+.validacao li {
+    display: block;
+}
+
+.validacao ul li::before {
+    content: '- ';
+}
+
 /* Footer */
 
 footer {
