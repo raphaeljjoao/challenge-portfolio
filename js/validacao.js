@@ -15,7 +15,6 @@ const nomeCampos = ['nome', 'email', 'assunto', 'mensagem'];
 const maxCaracteres = [50, 50, 50, 300];
 
 // Funções úteis
-
 function vazio(input) {
     return input.value === '';
 }
@@ -60,7 +59,6 @@ function criaLi(mensagem) {
 }
 
 function listaErros() {
-    ulErros.innerHTML = '';
     erros.forEach(function(mensagemErro) {
         let erro = criaLi(mensagemErro);
         ulErros.appendChild(erro);
@@ -68,15 +66,32 @@ function listaErros() {
 }
 
 // Eventos
+inputs.forEach(function(input) {
+    input.addEventListener('input', function() {
+        erros = [];
+        ulErros.innerHTML = '';
+        validaObrigatorios();
+        validaComprimento();
+        validaEmail();
+
+        if (erros.length > 0){
+            listaErros();
+            enviarFormulario.classList.add('desativado');
+            return;
+        }
+        enviarFormulario.classList.remove('desativado');
+    });
+});
+
 enviarFormulario.addEventListener('click', function(event) {
-    erros = [];
-    validaObrigatorios();
-    validaComprimento();
-    validaEmail();
-
-    if (erros.length > 0){
-        listaErros();
+    if (enviarFormulario.classList.contains('desativado')){
         event.preventDefault();
+        return;
     }
+    
+    inputs.forEach(function(input) {
+        input.value = '';
+        enviarFormulario.classList.add('desativado');
+    })
 
-})
+});
