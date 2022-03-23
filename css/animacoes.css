@@ -35,3 +35,28 @@
     transform: scale(1.1);
 }
 
+nav a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .45);
+}
+
+.social li:hover {
+    border-bottom: .5px solid black;
+}
+
+/* Suavidade nos erros do formulário de contato */
+.validacao li {
+    animation: suavidade 600ms ease;
+}
+
+@keyframes suavidade {
+    from {
+        display: none;
+        opacity: 0;
+    }
+    to {
+        display: initial;
+        opacity: 1;
+    }
+}
+
